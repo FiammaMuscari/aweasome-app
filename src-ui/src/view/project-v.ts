@@ -6,9 +6,9 @@ import { taskFmc } from '../model/index.js';
 const HTML = html`
 <header>
 <h1></h1>
-<d-input class="new-task" placeholder="Enter new task (press enter)"></d-input>
+<d-input class="new-task" placeholder="Agregar tareas al projecto"></d-input>
 </header>
-<d-input class="search-task" placeholder="Search your task"></d-input>
+<d-input class="search-task" placeholder="Buscar tarea"></d-input>
 <section></section>
 `;
 

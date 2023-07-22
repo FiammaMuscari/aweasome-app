@@ -14,8 +14,8 @@ import { router } from '../router';
 // dom-native JS Tagged templates to create a DocumentFragment (parse once)
 const HTML = html`
 	<header>
-	<d-ico class="menu action" name="ico-menu"></d-ico>
-	<h1>my-app</h1>
+	
+	<h1>Fi Todo</h1>
 	</header>
 	<nav-v></nav-v>
 	<main></main>

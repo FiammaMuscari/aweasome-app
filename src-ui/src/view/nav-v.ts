@@ -6,7 +6,7 @@ import { router } from '../router.js';
 
 const HTML = html`
 <header>
-	<label>Projects</label>
+	<label>Agregar projecto</label>
 	<d-ico class="action show-add-project" name="ico-add"></d-ico>
 </header>
 <section>

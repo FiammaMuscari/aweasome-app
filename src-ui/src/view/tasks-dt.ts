@@ -5,9 +5,9 @@ import { taskFmc } from '../model/index.js';
 import { classable } from '../utils.js';
 
 const TASK_HEADER = html`
-	<div class="th">Title </div>
-	<div class="th">Info</div>
-	<div class="th done">Done</div>
+	<div class="th">Título </div>
+	<div class="th">Código</div>
+	<div class="th done">Hecho</div>
 	<div class="th more">&nbsp;</div>
 `
 
@@ -80,8 +80,8 @@ export class TasksDataTable extends BaseHTMLElement { // extends HTMLElement
 		const task = showMoreEl.closest('task-row')!.task;
 
 		const options = {
-			'toggle': (task.done) ? "Mark Undone" : "Mark Done",
-			'delete': elem("label", { class: "delete", $: { textContent: "Delete" } }),
+			'toggle': (task.done) ? "Deshacer" : "Marcar hecho",
+			'delete': elem("label", { class: "delete", $: { textContent: "Eliminar" } }),
 		};
 
 		// Show the meunu
@@ -192,7 +192,7 @@ export class TaskRow extends BaseHTMLElement { // extends HTMLElement
 			this.#titleEl.textContent = newTask.title;
 			let info = newTask.ctime;
 			info = info.substring(info.length - 5);
-			this.#infoEl.textContent = `(ctime: ${info})`;
+			this.#infoEl.textContent = `${info}`;
 		}
 
 	}
